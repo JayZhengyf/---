@@ -1,0 +1,39 @@
+<!-- pages/home/home.wxml -->
+
+<scroll-view class="container" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" enable-flex="true">
+  <block wx:for="{{UsersList}}">
+      <view class="feed-item">  
+        <view class="cu-list menu-avatar">
+            <view class="cu-item">
+              <view class="cu-avatar round lg" style="background-image:url(https://tse1-mm.cn.bing.net/th/id/R-C.2f034a1c3b2dc81d963fca9a0e67de66?rik=zg1EZyzPb%2bmtLA&riu=http%3a%2f%2fimage.qianye88.com%2fpic%2f196ee10ce65cfa5b1fef4156c8c7a417&ehk=Tum77uNdj2GKXcui1tkwIFW37KJEqqELS74STY1BVvM%3d&risl=&pid=ImgRaw&r=0);"></view>
+              <view class="content flex-sub">
+                <view>JayZheng</view>
+            </view>
+        </view>
+      </view>
+
+      <view class="feed-content">
+        <view bindtap="bindItemTap">
+          <a>
+            <text class="title">《钢铁是怎样练成的》</text>
+          </a>
+        </view>
+        <view class="answer-body">
+          <view bindtap="bindItemTap">
+            <text class="textfont textover text-center">
+            这本书说的可太对了！！！yyds20年代末30年代初，随着新经济政策的结束和斯大林政治经济体制的确立，在文艺界也要求建立高度集中统一的局面。斯大林时期的国家用“一统化”思想教育青少年，尤其重视文学艺术在培…20年代末30年代初.... 这本书说的可太对了！！！yyds20年代末30年代初，随着新经济政策的结束和斯大林政治经济体制的确立，在文艺界也要求建立高度集中统一的局面。斯大林时期的国家用“一统化”思想教育青少年，尤其重视文学艺术在培…20年代末30年代初.... 这本书说的可太对了！！！yyds20年代末30年代初，随着新经济政策的结束和斯大林政治经济体制的确立，在文艺界也要求建立高度集中统一的局面。斯大林时期的国家用“一统化”思想教育青少年，尤其重视文学艺术在培…20年代末30年代初....
+            </text>
+          </view>
+          <view class=" text-sm text-right padding">
+            <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+            <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+            <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+          </view>
+        </view>
+      </view>
+    </view>
+    <button class=" cu-btn round btn-edit lg bg-white" bindtap="onEditTap" style="width: 150rpx; height: 150rpx;">
+     <image src="/images/add.png" mode="aspectFit"></image>
+    </button>
+  </block>
+</scroll-view>

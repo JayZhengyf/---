@@ -1,0 +1,32 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg" style="margin-bottom: 50rpx;">
+    <image src="/images/head.png" class="png" mode="aspectFit" style="width: 240rpx; height: 250rpx;margin-left: 109px;"></image>
+    <view class="text-center" style="font-weight: bolder; font-size: xx-large;">
+      <text>Jay Zheng</text>
+    </view>
+  </view>
+
+  <view class="padding">
+    <view class="padding-xl radius shadow bg-white solid{{size?'s':''}}">
+    年龄：
+    <text>20</text>
+    </view>
+    <view class="padding-xl radius shadow bg-white solid{{size?'s':''}}">
+    性别：
+    <text>男</text>
+    </view>
+    <view class="padding-xl radius shadow bg-white solid{{size?'s':''}}">
+    出生年份：
+    <text>2022年12月12日</text>
+    </view>
+    <view class="padding-xl radius shadow bg-white solid{{size?'s':''}}">
+    最喜欢的书：
+    <text>《马克思主义基本原理》</text>
+    </view>
+    <view class="padding-xl radius shadow bg-white solid{{size?'s':''}}">
+    兴趣爱好：
+    <text>唱跳rap篮球</text>
+    </view>
+  </view>
+
+</scroll-view>

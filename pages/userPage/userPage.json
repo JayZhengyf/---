@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#f4f2f3",
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "个人主页"
+}

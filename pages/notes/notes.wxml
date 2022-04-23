@@ -1,0 +1,13 @@
+<!--pages/notes/notes.wxml-->
+<scroll-view class="container" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" enable-flex="true">
+  <block wx:for="{{10}}">
+    <view class="cu-timeline feed-item">
+      <view class="cu-time">06-17</view>
+      <view class="cu-item">
+        <view class="content text-black text-bold textfont text-center text-cut" bindtap="toDetails">
+           钢铁是怎样练成练没又练成又练没的
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
