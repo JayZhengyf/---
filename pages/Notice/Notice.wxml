@@ -1,0 +1,94 @@
+<!--pages/Notice/Notice.wxml-->
+<scroll-view scroll-x class="nav text-center bgcolor" style="font-size: medium;">
+  <view class="cu-item {{index==TabCur?'text-grey cur':''}}" wx:for="{{titleTab}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+    {{titleTab[index]}}
+  </view>
+</scroll-view>
+<block>
+  <view style="margin-top: 9px;" class="ctnt0" hidden="{{TabCur==0 ? '' : true}}">
+    <view class="cu-list menu-avatar">
+      <view class="solid{{size?'s':''}} cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{4}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+        <view class="cu-avatar round lg" style="background-image:url(https://tse1-mm.cn.bing.net/th/id/R-C.2f034a1c3b2dc81d963fca9a0e67de66?rik=zg1EZyzPb%2bmtLA&riu=http%3a%2f%2fimage.qianye88.com%2fpic%2f196ee10ce65cfa5b1fef4156c8c7a417&ehk=Tum77uNdj2GKXcui1tkwIFW37KJEqqELS74STY1BVvM%3d&risl=&pid=ImgRaw&r=0);"></view>
+        <view class="content">
+          <view class="text-grey">Jay</view>
+          <view class="text-gray text-sm">
+            <text class="cuIcon-infofill text-red"></text> 消息未送达</view>
+        </view>
+        <view class="action">
+          <view class="text-grey text-xs">22:20</view>
+          <view class="cu-tag round bg-grey sm">5</view>
+        </view>
+        <view class="move">
+          <view class="bg-grey">置顶</view>
+          <view class="bg-red">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+<block>
+  <view style="margin-top: 0px;" class="ctnt1" hidden="{{TabCur==1 ? '' : true}}" wx:for="{{8}}">
+    <view class="padding radius shadow bg-white solid{{size?'s':''}}">
+      <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+          <view class="cu-item {{menuArrow?'arrow':''}}">
+            <view class="content">
+            <image src="/images/thumb-up.png"></image>
+            <text>Jay给你点了赞</text>
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>
+</block>
+<block>
+  <view style=" margin-top: -25px;" class="ctnt2 placehold cu-list menu-avatar" hidden="{{TabCur==2 ? '' : true}}">
+    <view class="cu-item solid{{size?'s':''}}">
+    <view class=" cu-avatar round lg" style="background-image:url(https://tse1-mm.cn.bing.net/th/id/R-C.2f034a1c3b2dc81d963fca9a0e67de66?rik=zg1EZyzPb%2bmtLA&riu=http%3a%2f%2fimage.qianye88.com%2fpic%2f196ee10ce65cfa5b1fef4156c8c7a417&ehk=Tum77uNdj2GKXcui1tkwIFW37KJEqqELS74STY1BVvM%3d&risl=&pid=ImgRaw&r=0);"></view>
+    <view class="content">
+      <view class="text-grey">Jay</view>
+      <view class="text-gray text-sm flex">
+        <text class="text-cut">
+            <text class="cuIcon-infofill text-red  margin-right-xs"></text>天不生我李淳罡，剑道万古如长夜
+        </text>
+      </view>
+    </view>
+    <view class="action">
+      <view class="text-grey text-xs">22:20</view>
+      <view class="cu-tag round bg-grey sm">5</view>
+    </view>
+    </view>
+    <view class="cu-item solid{{size?'s':''}}">
+    <view class="cu-avatar round lg" style="background-image:url(https://tse1-mm.cn.bing.net/th/id/R-C.2f034a1c3b2dc81d963fca9a0e67de66?rik=zg1EZyzPb%2bmtLA&riu=http%3a%2f%2fimage.qianye88.com%2fpic%2f196ee10ce65cfa5b1fef4156c8c7a417&ehk=Tum77uNdj2GKXcui1tkwIFW37KJEqqELS74STY1BVvM%3d&risl=&pid=ImgRaw&r=0);">
+      <view class="cu-tag badge">99+</view>
+    </view>
+    <view class="content">
+      <view class="text-grey">
+        <text class="text-cut">瓦洛兰之盾-塔里克</text>
+        <view class="cu-tag round bg-orange sm">战士</view>
+      </view>
+      <view class="text-gray text-sm flex">
+        <text class="text-cut">塔里克是保护者星灵，用超乎寻常的力量守护着符文之地的生命、仁爱以及万物之美。塔里克由于渎职而被放逐，离开了祖国德玛西亚，前去攀登巨神峰寻找救赎，但他找到的却是来自星界的更高层的召唤。现在的塔里克与古代巨神族的神力相融合，以瓦洛兰之盾的身份，永不疲倦地警惕着阴险狡诈的虚空腐化之力。</text>
+      </view>
+    </view>
+    <view class="action">
+      <view class="text-grey text-xs">22:20</view>
+      <view class="cuIcon-notice_forbid_fill text-gray"></view>
+    </view>
+    </view>
+    <view class="cu-item solid{{size?'s':''}}">
+    <view class="cu-avatar radius lg" style="background-image:url(https://tse1-mm.cn.bing.net/th/id/R-C.2f034a1c3b2dc81d963fca9a0e67de66?rik=zg1EZyzPb%2bmtLA&riu=http%3a%2f%2fimage.qianye88.com%2fpic%2f196ee10ce65cfa5b1fef4156c8c7a417&ehk=Tum77uNdj2GKXcui1tkwIFW37KJEqqELS74STY1BVvM%3d&risl=&pid=ImgRaw&r=0);"></view>
+    <view class="content">
+      <view class="text-pink">
+        <text class="text-cut">莫甘娜</text>
+      </view>
+      <view class="text-gray text-sm flex">
+        <text class="text-cut">凯尔，你被自己的光芒变的盲目！</text>
+      </view>
+    </view>
+    <view class="action">
+      <view class="text-grey text-xs">22:20</view>
+      <view class="cu-tag round bg-red sm">5</view>
+    </view>
+    </view>
+  </view>
+</block>

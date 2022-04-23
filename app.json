@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/notes/notes",
+    "pages/UserInfo/UserInfo",
+    "pages/Details/Details",
+    "pages/userPage/userPage",
+    "pages/Notice/Notice",
+    "pages/topic-edit/topic-edit",
+    "pages/auth/auth"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#E1F5C4",
+    "navigationBarTitleText": "享读",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+      },
+      {
+        "pagePath": "pages/notes/notes",
+        "text": "书目",
+        "iconPath": "images/note.png",
+        "selectedIconPath": "images/note-active.png"
+      },
+      {
+        "pagePath" :"pages/Notice/Notice",
+        "text": "通知",
+        "iconPath": "/images/notify.png",
+        "selectedIconPath": "/images/notify-active.png"
+      },
+      {
+        "pagePath": "pages/UserInfo/UserInfo",
+        "text": "我的",
+        "iconPath": "images/person.png",
+        "selectedIconPath": "images/person-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

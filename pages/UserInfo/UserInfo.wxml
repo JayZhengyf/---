@@ -1,0 +1,55 @@
+<!--pages/UserInfo/UserInfo.wxml-->
+<view class="container more">
+  <view class="flex">
+    <view class="flex solid-bottom padding justify-start">
+      <view class="cu-avatar lg round margin-left" style="background-image:url(https://tse1-mm.cn.bing.net/th/id/R-C.2f034a1c3b2dc81d963fca9a0e67de66?rik=zg1EZyzPb%2bmtLA&riu=http%3a%2f%2fimage.qianye88.com%2fpic%2f196ee10ce65cfa5b1fef4156c8c7a417&ehk=Tum77uNdj2GKXcui1tkwIFW37KJEqqELS74STY1BVvM%3d&risl=&pid=ImgRaw&r=0);"></view>
+      <view class="padding-sm margin-xs radius fontSize" style="font-weight: bolder;">JayZheng</view>
+    </view>
+    <view class="flex solid-bottom padding justify-end">
+      <navigator class="padding-sm margin-xs radius fontSize" url="/pages/userPage/userPage">个人主页 ></navigator>
+    </view>
+  </view>
+  <view class="padding" style="width:100%;">
+    <view class="padding-xl radius shadow bg-white solid{{size?'s':''}}">
+      <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+          <view class="cu-item {{menuArrow?'arrow':''}}">
+            <view class="content">
+              <image src="/images/collect2.png" class="png" mode="aspectFit"></image>
+              <text>我的收藏</text>
+            </view>
+          </view>
+      </view>
+    </view>
+    <view class="padding-xl radius shadow bg-white solid{{size?'s':''}}">
+      <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+          <view class="cu-item {{menuArrow?'arrow':''}}">
+            <view class="content">
+              <image src="/images/draft.png" class="png" mode="aspectFit"></image>
+              <text>草稿箱</text>
+            </view>
+          </view>
+      </view>
+    </view>
+    <view class="padding-xl radius shadow bg-white solid{{size?'s':''}}">
+      <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+          <view class="cu-item {{menuArrow?'arrow':''}}">
+            <view class="content">
+              <image src="/images/history.png" class="png" mode="aspectFit"></image>
+              <text>浏览记录</text>
+            </view>
+          </view>
+      </view>
+    </view>
+    <view class="padding-xl radius shadow bg-white solid{{size?'s':''}}">
+      <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+          <view class="cu-item {{menuArrow?'arrow':''}}">
+            <view class="content">
+              <image src="/images/setting.png" class="png" mode="aspectFit"></image>
+              <text>设置</text>
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>
+
